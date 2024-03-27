@@ -61,6 +61,6 @@
 
 ### Destroy
 
-- controller
-- route
-- view
+- controller - active record query to find one herb by params, called the destroy method, redirect to index after deleting
+- route - delete request, require a param for destroy, added alias to use on the link
+- view - added a link on the show page and called the alias with the data to specify a delete action
