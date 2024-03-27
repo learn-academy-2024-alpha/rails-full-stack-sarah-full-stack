@@ -33,15 +33,17 @@
 
 ### New
 
-- controller
-- route
-- view
+- controller - active record connection to the herb model
+- route - get request, added alias, reorder the routes because new is more specific than show
+- view - form_with helper to create a form with text input and radio buttons
+- link from index to new
+- link from new to index
 
 ### Create
 
-- controller
-- route
-- view
+- controller - active record query to create, added strong params method that limits what the user has access to in the database
+- route - post request
+- view - no inherent view with post, added submit button to the form and redirect on successful creation of herb
 
 ### Edit
 
