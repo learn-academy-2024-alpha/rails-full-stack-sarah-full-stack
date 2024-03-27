@@ -19,9 +19,17 @@
 
 ### Show
 
-- controller
-- route
-- view
+- controller - active record query to find one herb by params
+- route - get request, added alias, required param of id `Parameters: {"id"=>"2"}`
+- view - parsed into the herb and displayed name and watered values
+- link from show to index
+- link from index to show requires a param
+
+```ruby
+<%= herb.name %>
+<%= link_to herb.name %>
+<%= link_to herb.name, herb_path(herb) %>
+```
 
 ### New
 
