@@ -1,24 +1,25 @@
-# README
+# Rails Full-stack 3/27/2024
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### App Configs
 
-Things you may want to cover:
+- added RSpec
+- Model: Herb - name and watered
+- rails g model Herb name:string watered:string
+- added Herbs in rails c
+- rails g controller Herb
 
-* Ruby version
+### RESTful Routes
 
-* System dependencies
+### Index
 
-* Configuration
+### Show
 
-* Database creation
+### New
 
-* Database initialization
+### Create
 
-* How to run the test suite
+### Edit
 
-* Services (job queues, cache servers, search engines, etc.)
+### Update
 
-* Deployment instructions
-
-* ...
+### Destroy
