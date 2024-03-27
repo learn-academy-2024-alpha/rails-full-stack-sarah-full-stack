@@ -19,6 +19,10 @@ class HerbController < ApplicationController
     end
   end
 
+  def edit
+    @herb = Herb.find(params[:id])
+  end
+
   private
   def herb_params
     params.require(:herb).permit(:name, :watered)
