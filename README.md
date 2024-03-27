@@ -47,15 +47,17 @@
 
 ### Edit
 
-- controller
-- route
-- view
+- controller - active record query to find one herb by params
+- route - get request, added an alias, required param for edit
+- view - c/p from the new form, minor text changes
+- link from edit to index
+- link from show to edit that specific herb
 
 ### Update
 
-- controller
-- route
-- view
+- controller - active record query to find one herb by params, called strong params method
+- route - patch request, require a param for update
+- view - redirect to the show page if the update is valid
 
 ### Destroy
 
