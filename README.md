@@ -41,9 +41,9 @@
 
 ### Create
 
-- controller
-- route
-- view
+- controller - active record query to create, added strong params method that limits what the user has access to in the database
+- route - post request
+- view - no inherent view with post, added submit button to the form and redirect on successful creation of herb
 
 ### Edit
 
