@@ -31,6 +31,12 @@ class HerbController < ApplicationController
     end
   end
 
+  def destroy
+    @herb = Herb.find(params[:id])
+    @herb.destroy
+    redirect_to herbs_path
+  end
+
   private
   def herb_params
     params.require(:herb).permit(:name, :watered)
