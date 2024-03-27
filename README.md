@@ -33,9 +33,11 @@
 
 ### New
 
-- controller
-- route
-- view
+- controller - active record connection to the herb model
+- route - get request, added alias, reorder the routes because new is more specific than show
+- view - form_with helper to create a form with text input and radio buttons
+- link from index to new
+- link from new to index
 
 ### Create
 

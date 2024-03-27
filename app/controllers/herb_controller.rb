@@ -5,5 +5,10 @@ class HerbController < ApplicationController
 
   def show
     @herb = Herb.find(params[:id])
+    #return show.html.erb
+  end
+
+  def new
+    @herb = Herb.new
   end
 end
