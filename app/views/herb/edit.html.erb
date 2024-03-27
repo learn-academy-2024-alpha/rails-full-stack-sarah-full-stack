@@ -1,19 +1,5 @@
 <h3>Edit Your Herb</h3>
 
-<%= form_with model: @herb do |form| %>
-  <%= form.label :name, 'Edit Herb Name' %>
-  <br />
-  <%= form.text_field :name %>
-  <br />
-  <br />
-  <%= form.radio_button :watered, "Yes" %>
-  <%= form.label :watered, "The herb has been watered" %>
-  <br />
-  <%= form.radio_button :watered, "No" %>
-  <%= form.label :watered, "The herb has NOT been watered" %>
-  <br />
-  <br />
-  <%= form.submit 'Edit Herb' %>
-<% end %>
+<%= render partial: 'form', locals: {herb: @herb} %>
 
 <p><%= link_to 'Home', herbs_path %></p>
