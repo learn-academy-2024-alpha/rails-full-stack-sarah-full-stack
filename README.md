@@ -55,9 +55,9 @@
 
 ### Update
 
-- controller
-- route
-- view
+- controller - active record query to find one herb by params, called strong params method
+- route - patch request, require a param for update
+- view - redirect to the show page if the update is valid
 
 ### Destroy
 

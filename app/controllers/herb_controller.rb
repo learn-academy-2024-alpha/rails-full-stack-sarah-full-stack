@@ -23,6 +23,14 @@ class HerbController < ApplicationController
     @herb = Herb.find(params[:id])
   end
 
+  def update
+    @herb = Herb.find(params[:id])
+    @herb.update(herb_params)
+    if @herb.valid?
+      redirect_to herb_path(@herb)
+    end
+  end
+
   private
   def herb_params
     params.require(:herb).permit(:name, :watered)
